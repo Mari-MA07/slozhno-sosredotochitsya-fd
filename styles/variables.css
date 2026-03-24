@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
-  --bg-image: url("/images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
   --bg-color: rgba(0, 0, 40, 1);
   --text-color: rgba(0, 0, 40, 1);
   --main-font: "IBM Plex mono";
