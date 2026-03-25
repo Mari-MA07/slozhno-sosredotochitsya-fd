@@ -151,7 +151,6 @@
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 var(--padding-mobile);
-  background-color: var(--bg-color);
   padding-top: 40px;
 }
 
@@ -234,7 +233,6 @@
   min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr;
-  background-color: var(--bg-color);
 }
 
 .footer-title {
@@ -323,12 +321,12 @@
     display: contents;
   }
 
-  .text-section__topics :last-child.card :last-child {
+  .text-section__topics :last-child.card {
     margin-bottom: 60px;
   }
 
-  .text-section__topics:nth-child(4) .text-section__texts-title,
-  .text-section__topics:nth-child(2) .card {
+  .section__type__alternative .card,
+  .section__type__alternative .text-section__texts-title {
     grid-column: 1 / 4;
     padding-left: 0;
   }
@@ -404,23 +402,20 @@
     padding-left: 5px;
   }
 
-  .text-section__topics:nth-child(2) .card {
+  .section__type__alternative .card {
     grid-column: span 1;
     grid-row: 4;
-    padding: 0;
+    padding: 0 6px;
   }
 
-  .text-section__topics:nth-child(2) .card:nth-of-type(1) {
+  .section__type__alternative .card:first-of-type {
     padding-right: var(--padding-mobile);
     padding-left: 0;
   }
 
-  .text-section__topics:nth-child(2) .card:nth-of-type(2) {
-    padding: 0 6px;
-  }
-
-  .text-section__topics:nth-child(2) .card:nth-of-type(3) {
+  .section__type__alternative .card:last-of-type {
     padding-left: 12px;
+    padding-right: 0;
   }
 
   .text-section-images {
